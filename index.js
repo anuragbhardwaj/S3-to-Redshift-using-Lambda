@@ -62,7 +62,6 @@ exports.handler = function(event, context) {
             var inbound_payload = JSON.parse(data.Body);
 
         	insertData(inbound_payload);
-            //context.succeed();
         }
     });
 
@@ -155,12 +154,9 @@ exports.handler = function(event, context) {
 	                        	insertIntoRedshift(m);
 	                    	} 
 	                	}
-                  	}
-
-                  	    	
+                  	}   	
             	}
 			});
-			
 		});
 
 		var insertIntoRedshift = function(m){
@@ -180,6 +176,6 @@ exports.handler = function(event, context) {
         	});	
 		}
 		
-		
+			
 	}
 };
