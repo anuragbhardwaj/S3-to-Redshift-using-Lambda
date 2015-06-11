@@ -56,7 +56,7 @@ exports.handler = function(event, context) {
         if (err) {
             console.log("Error getting object " + key + " from bucket " + bucket +
                 ". Make sure they exist and your bucket is in the same region as this function.");
-            context.fail ("Error getting file: " + err)      
+            context.fail ("Error getting file: " + err);      
         } else {
             console.log('CONTENT TYPE:', data.ContentType);
             var inbound_payload = JSON.parse(data.Body);
