@@ -134,6 +134,7 @@ exports.handler = function(event, context) {
 			client.query(queryFetch, [SunEdCustId], function(err,result){
 				if(err){
 					console.log("Error returning query", err);
+					context.done("Fatal Error");
 				}
 				console.log("Number of rows: ", result.rows.length);
 				console.log("Number of rows from JSON" + inbound_payload.Array.length);
