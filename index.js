@@ -166,7 +166,7 @@ exports.handler = function(event, context) {
 
                   	//Check for duplicacy and insert rows to redshift. 
                   	else{
-                  		for(var k=0;k<result.rows.length;k++){
+                  		for(var k=0;k<result.rows;k++){
 	                    	if(result.rows[k].suned_cust_id == SunEdCustId && result.rows[k].array_number == inbound_payload.Array[m].ArrayNumber){
 	                        	console.log("Duplicate Row Exists.");
 	                        	break;           
