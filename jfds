@@ -1,9 +1,0 @@
-index.js[36m:[mvar [1;31mconString[m = "postgresql://abhardwaj:Master12@rs-instance.cysomezynckr.us-west-2.redshift.amazonaws.com:5439/mydb";
-index.js[36m:[m		pg.connect([1;31mconString[m, function(err,client){
-index.js[36m:[m			pg.connect([1;31mconString[m, function(err,client){
-node_modules/pg/README.md[36m:[mvar [1;31mconString[m = "postgres://username:password@localhost/database";
-node_modules/pg/README.md[36m:[mpg.connect([1;31mconString[m, function(err, client, done) {
-node_modules/pg/README.md[36m:[mvar [1;31mconString[m = "postgres://username:password@localhost/database";
-node_modules/pg/README.md[36m:[mvar client = new pg.Client([1;31mconString[m);
-node_modules/pg/lib/native/index.js[36m:[m  this.connectionParameters.getLibpqConnectionString(function(err, [1;31mconString[m) {
-node_modules/pg/lib/native/index.js[36m:[m    self.native.connect([1;31mconString[m, function(err) {
