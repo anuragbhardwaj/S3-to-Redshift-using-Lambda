@@ -180,7 +180,7 @@ exports.handler = function(event, context) {
 			});
 		});
 
-		//Method to run insert query to push data into redshift. 
+		//Method to run insert query to push data into redshift 
 		var insertIntoRedshift = function(m){
 			pg.connect(conString, function(err,client){
         		if(err){
